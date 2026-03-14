@@ -8,26 +8,37 @@
         :root { --dourado: #d4af37; --fundo: #000000; }
         body { font-family: sans-serif; background-color: var(--fundo); color: white; text-align: center; padding: 40px 20px; margin: 0; }
         .logo { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--dourado); margin-bottom: 20px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
-        h1 { color: var(--dourado); font-size: 26px; margin-bottom: 5px; }
-        p { color: #aaa; margin-bottom: 30px; }
-        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 300px; margin: 15px auto; padding: 18px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .android { background: linear-gradient(135deg, #d4af37, #b8860b); color: black; }
+        h1 { color: var(--dourado); font-size: 26px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+        p { color: #aaa; margin-bottom: 30px; font-style: italic; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 300px; margin: 15px auto; padding: 18px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        .android { background: linear-gradient(135deg, #d4af37, #b8860b); color: black; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
         .ios { background-color: #ffffff; color: black; }
-        .btn:hover { transform: scale(1.03); }
-        .ios-tip { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; font-size: 14px; max-width: 300px; margin: 20px auto; border: 1px dashed #444; }
+        .btn:hover { transform: translateY(-3px); opacity: 0.9; }
+        .ios-tip { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; font-size: 14px; max-width: 300px; margin: 25px auto; border: 1px dashed #444; line-height: 1.4; }
+        .footer { margin-top: 50px; font-size: 12px; color: #555; }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Sua Conquista Diária" class="logo">
     <h1>Sua Conquista Diária</h1>
     <p>O seu refúgio digital de fé e oração.</p>
 
-    <a href="COLE_O_LINK_AQUI" class="btn android">📥 BAIXAR PARA ANDROID</a>
+    <a href="https://github.com/ConquistaDiaria/app-Conquista-Di-ria/releases/download/v1/app3957719-hr0xep.apk" class="btn android">
+        📥 BAIXAR PARA ANDROID
+    </a>
 
-    <a href="https://suaconquistadiaria.lovable.app" target="_blank" class="btn ios">🍎 INSTALAR NO IPHONE</a>
+    <a href="https://suaconquistadiaria.lovable.app" target="_blank" class="btn ios">
+        🍎 INSTALAR NO IPHONE
+    </a>
 
     <div class="ios-tip">
-        <strong>No iPhone:</strong> Abra pelo Safari ou Chrome, toque em <b>Compartilhar</b> e depois em <b>"Adicionar à Tela de Início"</b>.
+        <strong>Dica para iPhone/iOS:</strong><br>
+        Abra o link acima, toque no ícone de <b>Compartilhar</b> e selecione <b>"Adicionar à Tela de Início"</b>.
+    </div>
+
+    <div class="footer">
+        © 2026 Sua Conquista Diária<br>
+        "Se uma capivara conseguiu, você também consegue!" 🐾
     </div>
 </body>
 </html>
