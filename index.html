@@ -8,7 +8,7 @@
         :root { 
             --dourado: #d4af37; 
             --fundo: #000000; 
-            --neon-amarelo: #ccff00; /* Cor Amarelo Neon vibrante */
+            --neon-amarelo: #ccff00; 
         }
         body { font-family: sans-serif; background-color: var(--fundo); color: white; text-align: center; padding: 40px 20px; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
         
@@ -28,35 +28,27 @@
         }
 
         h1 { color: var(--dourado); font-size: 28px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
-        p { color: #aaa; margin-bottom: 35px; font-style: italic; font-size: 18px; }
-        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 300px; margin: 15px auto; padding: 18px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        p { color: #aaa; margin-bottom: 35px; font-style: italic; font-size: 20px; }
+        
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 320px; margin: 15px auto; padding: 20px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; font-size: 18px; }
         .android { background: linear-gradient(135deg, #d4af37, #b8860b); color: black; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
         .ios { background-color: #ffffff; color: black; }
         .btn:hover { transform: translateY(-3px); opacity: 0.9; }
 
-        /* AQUI ESTÃO AS MUDANÇAS NA DICA iOS: */
         .ios-tip { 
             background: rgba(255,255,255,0.05); 
-            padding: 20px; /* Aumentei o preenchimento interno */
-            border-radius: 12px; 
-            
-            /* Fonte maior: */
-            font-size: 18px; 
-            
-            max-width: 350px; /* Aumentei um pouco a largura máxima */
+            padding: 25px; 
+            border-radius: 15px; 
+            font-size: 20px; /* Fonte aumentada conforme solicitado */
+            max-width: 360px; 
             margin: 30px auto; 
-            
-            /* Contorno Amarelo Neon Vibrante e Contínuo: */
-            border: 3px solid var(--neon-amarelo); 
-            
-            /* Efeito de brilho neon (glow) no contorno: */
-            box-shadow: 0 0 15px var(--neon-amarelo), inset 0 0 5px rgba(204, 255, 0, 0.2);
-            
-            line-height: 1.5; /* Espaçamento entre linhas melhorado */
+            border: 4px solid var(--neon-amarelo); /* Borda Neon mais grossa */
+            box-shadow: 0 0 20px var(--neon-amarelo), inset 0 0 10px rgba(204, 255, 0, 0.3);
+            line-height: 1.6;
         }
-        .ios-tip strong { color: var(--neon-amarelo); } /* Destaca o "Dica" em neon */
+        .ios-tip strong { color: var(--neon-amarelo); text-transform: uppercase; }
 
-        .footer { margin-top: 50px; font-size: 12px; color: #555; }
+        .footer { margin-top: 50px; font-size: 14px; color: #666; }
     </style>
 </head>
 <body>
@@ -66,7 +58,7 @@
     <h1>Sua Conquista Diária</h1>
     <p>O seu refúgio digital de fé e oração.</p>
 
-    <a href="https://github.com/ConquistaDiaria/app-Conquista-Di-ria/releases/download/v1/app3957719-hr0xep.apk" class="btn android">
+    <a href="https://github.com/ConquistaDiaria/app_ConquistaDiaria/releases/download/v1/app3957719-hr0xep.apk" class="btn android">
         📥 BAIXAR PARA ANDROID
     </a>
 
