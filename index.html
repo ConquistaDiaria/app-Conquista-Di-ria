@@ -5,75 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Conquista Diária - App Oficial</title>
     <style>
-        :root { 
-            --dourado: #d4af37; 
-            --fundo: #000000; 
-            --neon-amarelo: #ccff00; 
-        }
+        :root { --dourado: #d4af37; --fundo: #000000; --neon-amarelo: #ccff00; }
         body { font-family: sans-serif; background-color: var(--fundo); color: white; text-align: center; padding: 40px 20px; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
-        
-        .logo-container { 
-            width: 220px; 
-            height: 220px; 
-            margin-bottom: 20px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-        }
-        .logo-container img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: contain; 
-            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
-        }
-
+        .logo-container { width: 220px; height: 220px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
+        .logo-container img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4)); }
         h1 { color: var(--dourado); font-size: 28px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
         p { color: #aaa; margin-bottom: 35px; font-style: italic; font-size: 20px; }
-        
         .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 320px; margin: 15px auto; padding: 20px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; font-size: 18px; }
         .android { background: linear-gradient(135deg, #d4af37, #b8860b); color: black; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
         .ios { background-color: #ffffff; color: black; }
         .btn:hover { transform: translateY(-3px); opacity: 0.9; }
-
-        .ios-tip { 
-            background: rgba(255,255,255,0.05); 
-            padding: 25px; 
-            border-radius: 15px; 
-            font-size: 20px; 
-            max-width: 360px; 
-            margin: 30px auto; 
-            border: 4px solid var(--neon-amarelo); 
-            box-shadow: 0 0 20px var(--neon-amarelo), inset 0 0 10px rgba(204, 255, 0, 0.3);
-            line-height: 1.6;
-        }
+        .ios-tip { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; font-size: 20px; max-width: 360px; margin: 30px auto; border: 4px solid var(--neon-amarelo); box-shadow: 0 0 20px var(--neon-amarelo), inset 0 0 10px rgba(204, 255, 0, 0.3); line-height: 1.6; }
         .ios-tip strong { color: var(--neon-amarelo); text-transform: uppercase; }
-
         .footer { margin-top: 50px; font-size: 14px; color: #666; }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="logo.png" alt="Sua Conquista Diária">
-    </div>
+    <div class="logo-container"><img src="logo.png" alt="Sua Conquista Diária"></div>
     <h1>Sua Conquista Diária</h1>
     <p>O seu refúgio digital de fé e oração.</p>
-
-    <a href="https://github.com/ConquistaDiaria/app-Conquistadiaria/releases/download/v1/app3957719-hr0xep.apk" class="btn android">
-        📥 BAIXAR PARA ANDROID
-    </a>
-
-    <a href="https://suaconquistadiaria.lovable.app" target="_blank" class="btn ios">
-        🍎 INSTALAR NO IPHONE
-    </a>
-
-    <div class="ios-tip">
-        <strong>Dica para iPhone/iOS:</strong><br>
-        Abra o link acima, toque no ícone de <b>Compartilhar</b> e selecione <b>"Adicionar à Tela de Início"</b>.
-    </div>
-
-    <div class="footer">
-        © 2026 Sua Conquista Diária<br>
-        "Se uma capivara conseguiu, você também consegue!" 🐾
-    </div>
+    <a href="https://github.com/ConquistaDiaria/app-Conquistadiaria/releases/download/v1/app3957719-hr0xep.apk" class="btn android">📥 BAIXAR PARA ANDROID</a>
+    <a href="https://suaconquistadiaria.lovable.app" target="_blank" class="btn ios">🍎 INSTALAR NO IPHONE</a>
+    <div class="ios-tip"><strong>Dica para iPhone/iOS:</strong><br>Abra o link acima, toque no ícone de <b>Compartilhar</b> e selecione <b>"Adicionar à Tela de Início"</b>.</div>
+    <div class="footer">© 2026 Sua Conquista Diária</div>
 </body>
 </html>
