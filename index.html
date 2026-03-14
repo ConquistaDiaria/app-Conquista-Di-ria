@@ -6,8 +6,9 @@
     <title>Sua Conquista Diária - App Oficial</title>
     <style>
         :root { --dourado: #d4af37; --fundo: #000000; }
-        body { font-family: sans-serif; background-color: var(--fundo); color: white; text-align: center; padding: 40px 20px; margin: 0; }
-        .logo { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--dourado); margin-bottom: 20px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+        body { font-family: sans-serif; background-color: var(--fundo); color: white; text-align: center; padding: 40px 20px; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+        .logo-container { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--dourado); box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); overflow: hidden; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; background: #000; }
+        .logo-container img { width: 100%; height: 100%; object-fit: contain; }
         h1 { color: var(--dourado); font-size: 26px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
         p { color: #aaa; margin-bottom: 30px; font-style: italic; }
         .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 300px; margin: 15px auto; padding: 18px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
@@ -19,7 +20,9 @@
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Sua Conquista Diária" class="logo">
+    <div class="logo-container">
+        <img src="logo.png" alt="Sua Conquista Diária">
+    </div>
     <h1>Sua Conquista Diária</h1>
     <p>O seu refúgio digital de fé e oração.</p>
 
