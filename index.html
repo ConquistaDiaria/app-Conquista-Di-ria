@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Conquista Diária - App Oficial</title>
     <style>
-        :root { --dourado: #d4af37; --fundo: #000000; }
+        :root { 
+            --dourado: #d4af37; 
+            --fundo: #000000; 
+            --neon-amarelo: #ccff00; /* Cor Amarelo Neon vibrante */
+        }
         body { font-family: sans-serif; background-color: var(--fundo); color: white; text-align: center; padding: 40px 20px; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
         
-        /* AQUI ESTÁ A MUDANÇA: Aumentei para 200px e removi a borda */
         .logo-container { 
             width: 200px; 
             height: 200px; 
@@ -21,7 +24,7 @@
             width: 100%; 
             height: 100%; 
             object-fit: contain; 
-            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3)); /* Um brilho suave atrás da logo */
+            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
         }
 
         h1 { color: var(--dourado); font-size: 28px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
@@ -30,7 +33,29 @@
         .android { background: linear-gradient(135deg, #d4af37, #b8860b); color: black; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
         .ios { background-color: #ffffff; color: black; }
         .btn:hover { transform: translateY(-3px); opacity: 0.9; }
-        .ios-tip { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; font-size: 14px; max-width: 300px; margin: 25px auto; border: 1px dashed #444; line-height: 1.4; }
+
+        /* AQUI ESTÃO AS MUDANÇAS NA DICA iOS: */
+        .ios-tip { 
+            background: rgba(255,255,255,0.05); 
+            padding: 20px; /* Aumentei o preenchimento interno */
+            border-radius: 12px; 
+            
+            /* Fonte maior: */
+            font-size: 18px; 
+            
+            max-width: 350px; /* Aumentei um pouco a largura máxima */
+            margin: 30px auto; 
+            
+            /* Contorno Amarelo Neon Vibrante e Contínuo: */
+            border: 3px solid var(--neon-amarelo); 
+            
+            /* Efeito de brilho neon (glow) no contorno: */
+            box-shadow: 0 0 15px var(--neon-amarelo), inset 0 0 5px rgba(204, 255, 0, 0.2);
+            
+            line-height: 1.5; /* Espaçamento entre linhas melhorado */
+        }
+        .ios-tip strong { color: var(--neon-amarelo); } /* Destaca o "Dica" em neon */
+
         .footer { margin-top: 50px; font-size: 12px; color: #555; }
     </style>
 </head>
